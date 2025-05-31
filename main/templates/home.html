@@ -1,0 +1,451 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Robotech Digital Solutions</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+
+    <!--== CSS Files ==-->
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" media="screen">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" media="screen">
+    <link href="{% static 'css/font-awesome.css' %}" rel="stylesheet" media="screen">
+    <link href="{% static 'css/owl.carousel.css' %}" rel="stylesheet" media="screen">
+    <link href="{% static 'css/flexslider.css' %}" rel="stylesheet" media="screen">
+    <link href="{% static 'css/fancySelect.css' %}" rel="stylesheet" media="screen">
+    <link href="{% static 'css/responsive.css' %}" rel="stylesheet" media="screen">
+
+    <!--== Google Fonts ==-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Belgrano" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+    <!-- Latest Font Awesome CDN (version 6 recommended) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <!-- Font Awesome 4.7 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/67adef74825083258e149cdc/1ijvmunvo';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<script type="text/javascript">
+  (function () {
+    var options = {
+      whatsapp: "+254769700015", // Replace with your actual WhatsApp number
+      call_to_action: "Chat with us", // Text displayed on the button
+      position: "left", 
+    };
+    var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+    var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+    s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+    var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+  })();
+</script>
+
+<!--End of Tawk.to Script-->
+<body>
+    <header id="header">
+        <div id="menu" class="header-menu fixed">
+            <div class="box">
+                <div class="row">
+                    <nav class="navbar navbar-default" role="navigation">
+                        <div class="container-fluid">
+                            <!-- Navbar Header -->
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                    data-target="#main-navbar">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <span class="navbar-brand logo">Robotech Digital Solutions</span>
+                            </div>
+
+                            <!-- Navbar Links -->
+                            <div class="collapse navbar-collapse" id="main-navbar">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="{% url 'home' %}">Home</a></li>
+                                    <li><a href="{% url 'services' %}">Services</a></li>
+                                    <li><a href="{% url 'blog' %}">Our Blog</a></li>
+                                    <li><a href="{% url 'education' %}">Education</a></li>
+                                    <li><a href="{% url 'contact' %}">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+        <!--== Site Description ==-->
+        <div class="header-cta">
+            <div class="container">
+                <div class="row">
+                    <div class="entry-content">
+                        <p><span class="start-text"><b>Since 2019</b></span></p>
+                        <h4 class="entry-title"><a href="{% url 'home' %}">ROBOTECH DIGITAL SOLUTIONS </a></h4>
+                        <h5><span><b>Your Tech Solution Partner</b></span></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bg">
+            <div id="preloader">
+                <div class="preloader"></div>
+            </div>
+            <div class="main-slider" id="main-slider">
+                <ul class="slides">
+                    <li><img src="{% static 'images/demo/bg-slide-01.jpg' %}" alt="Slide Image" /></li>
+                    <li><img src="{% static 'images/demo/bg-slide-02.jpg' %}" alt="Slide Image 2" /></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="content">
+
+        <br />
+        <section>
+            <div style="max-width: 400%; padding: 0 15px; margin: auto;">
+                <div class="text-center mb-5">
+                    <h2 style="color: #0056b3; font-weight: bold; font-size:4.1rem;">About Us</h2>
+                    <p style="color: #000000; font-size: 3.5rem;">Know our great story</p>
+                </div>
+
+                <div class="row text-center"
+                    style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;">
+                    <div style="flex: 1 1 300px; max-width: 400px;">
+                        <div
+                            style="background-color: #fff; border-radius: 10px; padding: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                            <i class="fa fa-users fa-3x mb-3" style="color: #0056b3;"></i>
+                            <h4 style="font-weight: 600; font-size: 3.0rem;color:#000000;">Huge Customer Base</h4>
+                            <p style="color: #020202;font-size: 3.0rem;">Trusted across industries for quality ICT
+                                support, energy solutions, and dependable.</p>
+                        </div>
+                    </div>
+                    <div style="flex: 1 1 300px; max-width: 400px;">
+                        <div
+                            style="background-color: #fff; border-radius: 10px; padding: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                            <i class="fa fa-cogs fa-3x mb-3" style="color: #0056b3;"></i>
+                            <h4 style="font-weight: 600;font-size: 3.0rem;color:#000000;">Technology Integration</h4>
+                            <p style="color: #000000;font-size: 3.0rem;">Merging software, solar, security, and
+                                networking into smart, reliable systems.</p>
+                        </div>
+                    </div>
+                    <div style="flex: 1 1 300px; max-width: 400px;">
+                        <div
+                            style="background-color: #fff; border-radius: 10px; padding: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                            <i class="fa fa-robot fa-3x mb-3" style="color: #0056b3;"></i>
+                            <h4 style="font-weight: 600;font-size: 3.0rem; color:#000000;">Innovation-Driven</h4>
+                            <p style="color: #000000; font-size: 3.0rem;color:#000000;">Leaders in robotics and bionics,
+                                delivering futuristic solutions today.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-top: 40px; max-width: 1000px; margin-left: auto; margin-right: auto;">
+                    <div
+                        style="background-color: #fff; border-radius: 10px; padding: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                        <h4 class="mb-3" style="color: #0056b3; font-weight: bold;font-size: 4.0rem;">Who We Are</h4>
+                        <p style="color: #000000;font-size: 3.0rem;">We are a next-gen ICT company specializing in
+                            system analysis, software development, and robotics. Our offerings span computer
+                            maintenance, security systems, solar energy, custom CPU builds, and intelligent automation.
+                        </p>
+                        <p style="color: #000000;font-size: 3.0rem;">With a foundation in reliability and innovation, we
+                            aim to empower clients through future-ready technology solutions across Africa and beyond.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--== Schedule ==-->
+        <!-- <section id="schedule" class="row">
+            <div class="title-start schedule-menu col-md-4 col-md-offset-4">
+                <br /> 
+               <h2 class="sub-text text-center;font-size: 3.0rem; align-content: center">Products </h2>
+                <p class="sub-text text-center;font-size: 3.0rem;">Coming Soon </p>
+            </div>
+            
+
+        </section> -->
+
+        <!--== Blog ==-->
+        <section id="blog" class="row">
+            <div class="title-start col-md-4 col-md-offset-4">
+                <section id="services">
+                    <h2>Our Services</h2>
+                    <!-- Rest of your services content -->
+                </section>
+
+                <p class="sub-text text-center">Awesome news and articles from us</p>
+            </div>
+            <div class="top"></div>
+            <div class="content">
+                <div class="blog col-md-4">
+                    <h2 class="blog-head">⚡Electric & Solar Installation </h2>
+                    <h3>Posted by <a href="#">Zacharia Chege </a><span class="date-line"> on April 1st</span></h3>
+                    <img class="blog-image" src="{% static 'images/demo/blog2.jpg' %}" width="100%" height="250"
+                        alt="Blog Image 2" />
+                    <p class="firstpara"><span class="firstcharacter">P</span>we offer expert electric and solar
+                        installation
+                        services designed to deliver safe, reliable, and energy-efficient systems for homes, businesses,
+                        and institutions.
+                        experienced team ensures every project is completed with precision and professionalism.</p>
+                    <button class="button-info read-more" onclick="window.open('https:
+                    //robotechdigitals.blogspot.com/2024/04/eco-friendly-adventures-navigating.html', '_blank')">Read
+                        More</button>
+
+                </div>
+
+                <div class="blog col-md-4">
+                    <h2 class="blog-head">💡Smart Tech Solutions</h2>
+                    <h3>Posted by <a href="https://robotechdigitals.blogspot.com/">Chege </a><span class="date-line"> on
+                            April 30th</span></h3>
+                    <img class="blog-image" src="{% static 'images/demo/blog1.jpg' %}" width="100%" height="250"
+                        alt="Blog Image 2" />
+                    <p class="firstpara"><span class="firstcharacter">G</span>Power
+                        your business with reliable networking, stunning web design, and
+                        expert ICT support—all from Robotech Digital Solution. We connect, build,
+                        and support your digital future with precision and care.
+                    <p>🔧 Networking | 🌐 Web Design | 💼 ICT Support</p>
+
+                    <button class="button-info read-more"
+                        onclick="window.open('https://robotechdigitals.blogspot.com/', '_blank')">Read More</button>
+                </div>
+                <div class="blog col-md-4">
+                    <h2 class="blog-head">🎓Tech Training</h2>
+                    <h3>Posted by <a href="https://robotechdigitals.blogspot.com/">Chege</a><span class="date-line"> on
+                            April 1st</span></h3>
+                    <img class="blog-image" src="{% static 'images/demo/blog3.jpg' %}" width="100%" height="250"
+                        alt="Blog Image 2" />
+                    <p class="firstpara"><span class="firstcharacter"></span> At Robotech Digital Solution,
+                        we believe the future belongs to the skilled. That’s why we offer hands-on training programs
+                        designed to equip learners, job seekers, educators,
+                        and young innovators with the tools they need to thrive in the digital age..</p>
+                    <button class="button-info read-more"
+                        onclick="window.open('https://robotechdigitals.blogspot.com/', '_blank')">Read More</button>
+                </div>
+            </div>
+        </section>
+
+        <!--== Pricing Tables ==-->
+        <section id="prices" class="row">
+            <div class="title-start events-menu col-md-4 col-md-offset-4">
+                <h2>Pricing (Ksh)</h2>
+                <p class="sub-text text-center">Our affordable and flexible packages</p>
+            </div>
+
+            <div class="col-md-12 visible-md visible-lg">
+                <div class="wrap">
+                    <div class="pricing-table">
+                        <div class="plan">
+                            <h3 class="name">Basic</h3>
+                            <h4 class="price">5,000<span>/Day</span></h4>
+                            <ul class="details">
+                                <li><strong>1</strong> Page Web Design</li>
+                                <li><strong>Email</strong> Setup</li>
+                                <li><strong>1</strong>Month Support </li>
+                            </ul>
+                            <h5 class="order"><a href="tel:0769700015">Order Now</a></h5>
+
+                        </div><!--.plan-->
+
+                        <div class="plan">
+                            <h3 class="name">Standard</h3>
+                            <h4 class="price">20,000<span>/Project</span></h4>
+                            <ul class="details">
+                                <li><strong>5</strong> Page Website</li>
+                                <li><strong>SEO</strong> Optimization</li>
+                                <li><strong>3</strong>Month Support</li>
+                            </ul>
+                            <h5 class="order"><a href="tel:0769700015">Order Now</a></h5>
+
+                        </div><!--.plan-->
+
+                        <div class="plan">
+                            <h3 class="name">Premium</h3>
+                            <h4 class="price">35,000<span>/Project</span></h4>
+                            <ul class="details">
+                                <li><strong>10+</strong> Pages & Blog</li>
+                                <li><strong></strong> Domain & Hosting</li>
+                                <li><strong>6</strong>Month Support</li>
+                            </ul>
+                            <h5 class="order"><a href="tel:0769700015">Order Now</a></h5>
+
+                        </div><!--.plan-->
+                    </div><!--.pricing-table-->
+                </div><!--.wrap-->
+            </div>
+
+            <div class="col-sm-11 pricing-table visible-sm visible-xs">
+                <div class="plan">
+                    <h3 class="name">Silver</h3>
+                    <h4 class="price">$10,000<span>/Day</span></h4>
+                    <ul class="details">
+                        <li><strong>100</strong> Seats</li>
+                        <li><strong>3 Star</strong> Hotel</li>
+                        <li><strong>Gifts</strong></li>
+                    </ul>
+                    <h5 class="order"><a href="#">Order Now</a></h5>
+                </div><!--.plan-->
+            </div>
+
+           
+    <section id="contact" class="mapWrap">
+        <div id="googleMap" style="width:100%; height:300px;"></div>
+
+        <div id="contact-area">
+            <div class="container">
+                <h2 class="block_title">Hey There!</h2>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="moreDetails">
+                            <h2 class="con-title">More About Us</h2>
+                            <p>
+                                Robotech Digital Solution is committed to providing modern ICT, networking, and
+                                automation services. From smart surveillance to custom web development, we deliver
+                                powerful solutions that drive success.
+                            </p>
+                            <ul class="address">
+                                <li>
+                                    <i class="pe-7s-map-marker"></i>
+                                    <span>Robotech HQ, Kenyatta Road,<br>Thika, Kiambu County,<br>Kenya</span>
+                                </li>
+                                <li>
+                                    <i class="pe-7s-mail"></i>
+                                    <span>info@robotech.co.ke</span>
+                                </li>
+                                <li>
+                                    <i class="pe-7s-phone"></i>
+                                    <span><a href="tel:0769700015">0769 700 015</a></span>
+                                </li>
+                                <li>
+                                    <i class="pe-7s-global"></i>
+                                    <span><a href="https://www.robotech.co.ke"
+                                            target="_blank">www.robotech.co.ke</a></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <h2 class="con-title">Contact Us</h2>
+                        <form method="post" role="form">
+                            {% csrf_token %}
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="user_name" name="name"
+                                    placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="your_email" name="email"
+                                    placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" id="user_message" class="form-control" rows="5"
+                                    placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn medium">Send Message</button>
+
+                            {% if messages %}
+                            {% for message in messages %}
+                            <div class="alert alert-success">
+                                {{ message }}
+                            </div>
+                            {% endfor %}
+                            {% endif %}
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="social">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <ul class="scoialinks">
+                            <li class="normal-txt">Connect with us</li>
+                            <li class="social-icons"><a class="facebook" href="https://facebook.com/robotechkenya"
+                                    target="_blank"></a></li>
+                            <li class="social-icons"><a class="twitter" href="https://twitter.com/robotechkenya"
+                                    target="_blank"></a></li>
+                            <li class="social-icons"><a class="linkedin" href="https://linkedin.com/company/robotech-ke"
+                                    target="_blank"></a></li>
+                            <li class="social-icons"><a class="whatsapp" href="https://wa.me/254769700015"
+                                    target="_blank"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    </section><!-- contact -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <p class="copyright">© Copyright 2019 <a href="http://wwww.robotechdigi.com"
+                            target="_blank">Technext</a></p>
+                </div>
+                <div class="col-sm-6">
+                    <p class="designed">Designed and Developed by <a href="robotechdigi.com" target="_blank">Zacharia
+                            Chege</a></p>
+                </div>
+            </div>
+        </div>
+        <div style="width: 100%; height: 400px;">
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7978.199368937312!2d36.82648215!3d-1.27977385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f118f32e4b8a7%3A0xf53bbd0e8716ea07!2sGikambura%20Town%2C%20Kikuyu!5e0!3m2!1sen!2ske!4v1717158010101!5m2!1sen!2ske" 
+    width="100%" 
+    height="100%" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+    </footer>
+
+    <!--== Javascript Files ==-->
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script src="{% static 'js/jquery-2.1.0.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/jquery.scrollTo.js' %}"></script>
+    <script src="{% static 'js/jquery.nav.js' %}"></script>
+    <script src="{% static 'js/jquery.flexslider.js' %}"></script>
+    <script src="{% static 'js/jquery.accordion.js' %}"></script>
+    <script src="{% static 'js/jquery.placeholder.js' %}"></script>
+    <script src="{% static 'js/jquery.fitvids.js' %}"></script>
+    <script src="{% static 'js/gmap3.js' %}"></script>
+    <script src="{% static 'js/fancySelect.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#testimonial-container").owlCarousel({
+                navigation: false, // Show next and prev buttons
+                slideSpeed: 300,
+                paginationSpeed: 100,
+                singleItem: true,
+            });
+        });
+    </script>
+</body>
+
+</html>
